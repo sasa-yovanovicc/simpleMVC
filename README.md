@@ -1,6 +1,47 @@
 # simpleMVC
 Just simple MVC (written from scratch tounderstanding how MVC works)
 
+TASK:
+
+It's a really simple php application, based on an MVC pattern.Implemented in core PHP (no framework or CMS can be
+used) and it is:
+
+- URL mapped (.htaccess rewrite)
+- Based on an MVC pattern
+- Object oriented
+- Uses database (MySQL)
+
+Application:
+
+The application should have 2 database tables: users (id, name) and
+advertisements (id, userid, title).
+* As a user I'd like a page that shows the list of the users existing in
+the system.
+* As a user I'd like a page that shows the list of the existing
+advertisements in the system (and the related user's name of course)
+* They should be different pages
+* So the system should contain 3 pages:
+-> index, with the links to the user list and the advertisement list
+-> user list
+-> advertisement list
+-> The whole system should have a minimalist design (css)
+
+In summary:
+
+It's a 3 paged application, with a minimal design, and database access,
+which is URL mapped, and based on an MVC pattern. No framework or CMS
+allowed to use.
+
+Implementation:
+- Object oriented code
+- Must have at least 1 layer under the Controller layer
+- Model and service methods should be separated. Model here should be
+clear, used only for representation.
+- Must have a nice, and well documented code
+- A very simple css, in minimal style
+
+
+
 FIRST STEP:
 
 Change configuration data in file conf.in.php to meet your test envitoment configuration:
