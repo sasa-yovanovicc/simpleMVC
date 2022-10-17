@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+html ,
+body {
+   margin:0;
+   padding:0;
+   height:100%;  
+}
+header {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+}
+section {
+  min-height: 100%;
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -20px;
+  padding:40px 10px 10px 20px;   
+}
+.push { height: 20px;}
+
+footer {
+  width:100%;
+  height:20px;   
+  background-color:#aaa;
+  color: #000;
+  text-align: center;
+}
+
+
+/* navigation */
+/* The navbar container */
+.topnav {
+  overflow: hidden;
+  background-color:rgb(2, 82, 2);
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Links - change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(1, 175, 1);
+}
+/* tables */
+.table {
+  display: table;         
+  width: auto;    
+  border: none;      
+}
+.row {
+  display: table-row;
+  width: auto;
+  clear: both;
+}
+.row:hover {
+  background-color: #ddd;
+}
+.col {
+  float: left; 
+  display: table-column;         
+  width: 200px;         
+}
+
+/* typographic */
+.strong {
+  font-weight: bold;
+}
+/* version 2 - FORMS */
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+input[type=text]:focus {
+  background-color: lightblue;
+}
+.container {
+  width:30%;
+  background-color: #f2f2f2;
+  padding: 20px ;
+  margin: 5% auto;
+}
+/* style all elements with a required attribute */
+input:required {
+  border: 1px solid red;
+  outline: none;
+}
+.form-group.required label:after { 
+  content:"*";
+  color:red;
+}
