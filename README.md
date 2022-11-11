@@ -1,5 +1,5 @@
 # simpleMVC
-Just simple MVC (written from scratch tounderstanding how MVC works)
+Just simple MVC (written from scratch to understanding how MVC works)
 
 TASK:
 
